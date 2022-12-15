@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --color-nine:rgb(254, 193, 4)
+}
+.color-class {color: var(--color-nine);}
+html{
+    scroll-behavior: smooth !important;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1{font-size: 3.5em;}
+p{font-size: 1em;}
+
+
+button{
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    background-color: var(--color-nine);
+    margin-bottom: 3px;
+}
+button:hover{
+    background-color: rgb(230, 192, 40);
+}
+
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+header {
+    background-color: rgb(31, 29, 30);
+}
+header a{
+    padding: 2px 12px;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    text-shadow: 1px 1px 6px var(--color-nine);
+}
+header a:hover {
+    color: var(--color-nine);
+}
+header #marca {
+    color: var(--color-nine);
+    margin: 0;
+    font-family: roboto, sans-serif;
+    font-size: 1.6em;
+    padding: 25px 30px 10px;
+    position: relative; 
+  
+}
+
+header .contenedor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header img {
+    height: 40px;
+    position:relative;
+    top: 1em;   
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#hero {
+    margin: 0;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/imgint/burger1.jpg);
+    background-size: cover;
+    background-position: center center ;
+}
+
+#hero h1{
+    color: white;
+    margin: 0;
+    font-family: robotto, sans-serif;  
+    
+}
+
+ #quienes-somos .contenedor {
+   text-align: center;
+   padding: 80px 20px;
+   background-color: rgb(240, 240, 240);
+}
+#quienes-somos h2{
+    color: rgb(31, 29, 39);
+} 
+
+#burgers .contenedor, #lomos .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(31, 29, 30);
+    margin: 0;
+    max-width: none;
+    border-radius: 20px 20px 0px 0px;
+    padding-bottom: 5px;
+}
+
+#burgers img, #lomos img{
+    height: 75px;
+    border-radius: 20px;
+}
+#burgers h2, #lomos h2{
+    font-family: roboto, sans-serif;
+    color: var(--color-nine);
+    text-align: center;
+}
+.burgers__carta, .lomos__carta{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(254, 193, 4, 0.9);
+    border-radius: 20px;
+    margin: 5px;    
+}
+.burgers__carta h3, .lomos__carta h3{
+    color: var(--color-nine); 
+    font-family:sans-serif;
+    font-size: 20px;
+    width: 50px;
+
+}
+.burgers__carta p, .lomos__carta p{
+    padding: 0px 20px;
+    color: white;
+    font-size: 18px;    
+}
+
+.burgers__carta__ico, .lomos__carta__ico {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: rgb(31, 29, 30);
+    padding: 0px 0px;
+    border-radius: 20px;
+    border: 4px solid  rgba(254, 193, 4, 0.9);           
+}
+#lomos .contenedor{
+    border-radius: 0;
+}
+footer {
+    background-color: rgb(31, 29, 30);
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+footer .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 1px solid var(--color-nine);
+    padding-top: 10px;
+}
+footer p{
+    color: darkgray;
+    
+}
+footer img{
+    height: 40px;
+    padding-bottom: 10px;
+}
+footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+footer span {
+    padding-left: 5px;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+/* invertir color en carta de lomos*/
+/* #lomos img {
+    height: 50px;
+}
+#lomos .contenedor{
+    background-color: rgba(254, 193, 4, 0.9);
+}
+.lomos__carta{
+    background-color: rgb(31, 29, 30);
+}
+.lomos__carta__ico {
+    border-color: rgb(31, 29, 30);
+    background-color: rgba(254, 193, 4, 0.9);
+}
+.lomos__carta h3{
+    color: rgb(31, 29, 30);
+}
+#lomos h2{
+    color: rgb(31, 29, 30);
+}
+.lomos__carta p{
+    color: rgb(31, 29, 30);
+    
+} */
